@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - CodeCrafts</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Blog, Technology Articles, Digital Transformation, IT Insights" name="keywords">
+    <meta content="Explore the latest insights, trends, and best practices in the technology and digital solutions industry on the MyWebsite blog." name="description">
+
+    <!-- Favicon -->
+    <link href="img/icon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Color Scheme Stylesheet -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/logo.png" alt="CodeCrafts Logo" class="img-fluid me-2" style="height: 40px;">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="blog.html" class="nav-item nav-link active">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Blog Grid</h1>
+                    <a href="" class="h5 text-white">Home</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h5 text-white">Blog Grid</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Our Blog</h5>
+                <h1 class="mb-0">Latest Insights & Industry Trends</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-1.jpg" alt="Digital Transformation Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="blog.html?category=digital-strategy">Digital Strategy</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>Sarah Johnson</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>15 Jun, 2023</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html?post=digital-transformation-strategies" class="text-dark">5 Key Digital Transformation Strategies for 2023</a></h4>
+                            <p>Discover how leading companies are leveraging technology to drive innovation and achieve sustainable growth in today's rapidly evolving marketplace.</p>
+                            <a class="text-uppercase" href="detail.html?post=digital-transformation-strategies">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-2.jpg" alt="Cloud Solutions Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="blog.html?category=cloud-solutions">Cloud Solutions</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>Michael Chen</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>27 May, 2023</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html?post=cloud-based-infrastructure" class="text-dark">Optimizing Your Business with Cloud-Based Infrastructure</a></h4>
+                            <p>Learn how migrating to cloud services can reduce operational costs while enhancing security, scalability, and business agility for organizations of all sizes.</p>
+                            <a class="text-uppercase" href="detail.html?post=cloud-based-infrastructure">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-3.jpg" alt="AI Implementation Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="blog.html?category=ai-analytics">AI & Analytics</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>Emily Rodriguez</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>03 Apr, 2023</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html?post=ai-solutions" class="text-dark">Implementing AI Solutions for Data-Driven Decision Making</a></h4>
+                            <p>Explore practical applications of artificial intelligence and machine learning that can transform your business operations and provide actionable insights.</p>
+                            <a class="text-uppercase" href="detail.html?post=ai-solutions">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-1.jpg" alt="Cybersecurity Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="blog.html?category=cybersecurity">Cybersecurity</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>David Wilson</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>21 Mar, 2023</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html?post=cybersecurity-measures" class="text-dark">Essential Cybersecurity Measures Every Business Should Implement</a></h4>
+                            <p>Protect your organization from evolving cyber threats with these proven security strategies and best practices for maintaining data integrity and privacy.</p>
+                            <a class="text-uppercase" href="detail.html?post=cybersecurity-measures">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-2.jpg" alt="Web Development Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="blog.html?category=web-development">Web Development</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>Sophia Thompson</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>18 Feb, 2023</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html?post=front-end-frameworks" class="text-dark">Modern Front-End Frameworks: Choosing the Right Solution</a></h4>
+                            <p>Compare the benefits and limitations of popular front-end frameworks like React, Angular, and Vue to determine which one best suits your project requirements.</p>
+                            <a class="text-uppercase" href="detail.html?post=front-end-frameworks">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-3.jpg" alt="Digital Marketing Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="blog.html?category=digital-marketing">Digital Marketing</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>Robert Kim</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>05 Jan, 2023</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html?post=content-marketing" class="text-dark">Effective Content Marketing Strategies for B2B Companies</a></h4>
+                            <p>Learn how to create valuable, relevant content that resonates with your target audience and supports your business goals in the competitive B2B marketplace.</p>
+                            <a class="text-uppercase" href="detail.html?post=content-marketing">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-1.jpg" alt="UI/UX Design Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="#">UI/UX Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>Laura Chen</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>27 Dec, 2022</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html" class="text-dark">User-Centered Design Principles for Enhanced Customer Experience</a></h4>
+                            <p>Discover how implementing user-centered design approaches can lead to more intuitive interfaces, higher engagement rates, and improved customer satisfaction.</p>
+                            <a class="text-uppercase" href="detail.html">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-2.jpg" alt="Mobile App Development Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="#">Mobile Apps</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>James Morrison</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>10 Nov, 2022</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html" class="text-dark">Native vs. Cross-Platform App Development: Pros and Cons</a></h4>
+                            <p>Analyze the advantages and limitations of different mobile app development approaches to make informed decisions for your next mobile project.</p>
+                            <a class="text-uppercase" href="detail.html">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <a href="detail.html"><img class="img-fluid" src="img/blog-3.jpg" alt="E-commerce Blog"></a>
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="#">E-commerce</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>Rebecca Williams</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>23 Oct, 2022</small>
+                            </div>
+                            <h4 class="mb-3"><a href="detail.html" class="text-dark">Optimizing E-commerce Platforms for Conversion Rate Improvement</a></h4>
+                            <p>Implement these proven strategies to enhance your online store's performance, reduce cart abandonment, and increase sales through improved user experiences.</p>
+                            <a class="text-uppercase" href="detail.html">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="blog.html?category=digital-strategy" class="btn btn-light m-1">Digital Transformation</a>
+                        <a href="blog.html?category=cloud-computing" class="btn btn-light m-1">Cloud Computing</a>
+                        <a href="blog.html?category=ai" class="btn btn-light m-1">AI</a>
+                        <a href="blog.html?category=machine-learning" class="btn btn-light m-1">Machine Learning</a>
+                        <a href="blog.html?category=cybersecurity" class="btn btn-light m-1">Cybersecurity</a>
+                        <a href="blog.html?category=data-analytics" class="btn btn-light m-1">Data Analytics</a>
+                        <a href="blog.html?category=business-strategy" class="btn btn-light m-1">Business Strategy</a>
+                        <a href="blog.html?category=innovation" class="btn btn-light m-1">Innovation</a>
+                        <a href="blog.html?category=iot" class="btn btn-light m-1">IoT</a>
+                        <a href="blog.html?category=automation" class="btn btn-light m-1">Automation</a>
+                        <a href="blog.html?category=agile" class="btn btn-light m-1">Agile</a>
+                        <a href="blog.html?category=devops" class="btn btn-light m-1">DevOps</a>
+                    </div>
+                </div>
+                <div class="col-12 wow slideInUp" data-wow-delay="0.1s">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg m-0">
+                            <li class="page-item disabled">
+                                <a class="page-link rounded-0" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="blog.html">1</a></li>
+                            <li class="page-item"><a class="page-link" href="blog.html?page=2">2</a></li>
+                            <li class="page-item"><a class="page-link" href="blog.html?page=3">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link rounded-0" href="blog.html?page=2" aria-label="Next">
+                                    <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    
+
+   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="img/logo.png" alt="MyWebsite Logo" class="img-fluid mb-3" style="height: 40px;">
+                    </a>
+                    <p class="mt-3 mb-4">We provide innovative solutions to help your business grow. Our expert team delivers quality service with a focus on customer satisfaction and technological excellence.</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                            <button class="btn btn-dark">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">123 Street, New York, USA</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+012 345 67890</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">CodeCrafts</a>. All Rights Reserved. 
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

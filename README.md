@@ -29,11 +29,9 @@ This repository demonstrates:
 
 - Responsive layouts using HTML/CSS  
 - Interactive features using vanilla JavaScript  
-- Clean project structure and GitHub Pages deployment  
+- Clean project structure and GitHub Pages deployment
+- 
 
 Feel free to explore, use, or contribute to these projects!
 
----
-
-🛠️ **Built during my first practical test at SMIT under the guidance of [Hammad Sheikh Bin Nadeem 🇵🇰](#)**
 

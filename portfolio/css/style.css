@@ -138,6 +138,7 @@
     .container-fluid .education-header,
     .container-fluid .experience-header,
     .container-fluid .skills-header,
+    .container-fluid .service-header,
     .container-fluid .contact-header {
         padding: 25px;
     }
@@ -147,6 +148,7 @@
     .container-fluid .education-content,
     .container-fluid .experience-content,
     .container-fluid .skills-content,
+    .container-fluid .service-content,
     .container-fluid .contact-content {
         padding-left: 0;
         padding-top: 25px;
@@ -299,9 +301,25 @@
     border-radius: 50% 50% 50% 50% / 28% 28% 72% 72%;
     background: var(--bs-light);
     z-index: -1;
+    
 }
 /*** Skills End ***/
 
+** Service start **
+.service-content .service-item {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .03);
+    transition: 0.5s;
+}
+
+.service-content .service-item:hover i {
+    color: var(--bs-primary);
+
+}
+
+.service-content .service-item:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+/*** service End ***/
 
 /*** footer Start ***/
 @media (max-width: 991px) {
